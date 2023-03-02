@@ -1,27 +1,6 @@
 
 # Examples: 
 
-## --rotate-270
-
-
-$ podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-270 --resize-width 100 /incoming/python.gif -o /outgoing/python.gif
-
-```
-
-Before
-
-![--rotate-90 before](incoming/btreynor.gif)
-
-After
-
-![--rotate-270 after](outgoing/btreynor.gif)
-
-
-## --resize-100
-
-
-podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-270 --resize-width 100 /incoming/python.gif -o /outgoing/python.gif
-
 ## --rotate-90
 
 ```bash
@@ -53,7 +32,7 @@ After
 ## --use-colormap 'gray'
 
 ```bash
-podman run --rm -v $PWD/incoming:/incoming  -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifslce:latest gifsicle --resize-width 200  /incoming/jhin.gif -o /outgoing/jhin.gif
+podman run --rm -v $PWD/incoming:/incoming  -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifslce:latest gifsicle --resize-width 200  /incoming/giphy.gif -o /outgoing/giphy.gif
 ```
 
 Before
@@ -63,6 +42,21 @@ Before
 After
 
 ![--use-colormap 'gray' after](outgoing/jhin.gif)
+
+
+## --resize-width 200 --rotate-180 --colors 10
+
+```bash
+podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --resize-width 200 --rotate-180 --colors 10 /incoming/selfprogramming.gif -o /outgoing/selfprogramming.gif
+```
+
+Before
+
+![--resize-width 200 --rotate-180 --colors 10 before](incoming/selfprogramming.gif)
+
+After
+
+![--resize-width 200 --rotate-180 --colors 10 after](outgoing/selfprogramming.gif)
 
 
 # ChRIS PLugin for pygifsicle
