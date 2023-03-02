@@ -1,3 +1,17 @@
+
+# Examples: 
+
+## --rotate-90
+
+```bash
+podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-90 --resize-width 100 /incoming/python.gif -o /outgoing/python.gif
+```
+
+Before
+
+![--rotate-90 before](incoming/python.gif)
+![--rotate-90 after](outgoing/python.gif)
+
 # ChRIS PLugin for pygifsicle
 
 [![Version](https://img.shields.io/docker/v/fnndsc/pl-pygifsicle?sort=semver)](https://hub.docker.com/r/fnndsc/pl-pygifsicle)
