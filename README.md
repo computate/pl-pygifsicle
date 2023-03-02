@@ -15,19 +15,34 @@ After
 
 ![--rotate-90 after](outgoing/python.gif)
 
-## --resize width 200 --rotate-180 --colors 2 -- Marc Brown changes to gif image 
+## --resize-width 200
 
 ```bash
-podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-90 --resize-width 200 --colors 2 /incoming/selfprogramming.gif -o /outgoing/selfprogramming.gif
+podman run --rm -v $PWD/incoming:/incoming  -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifslce:latest gifsicle --resize-width 200  /incoming/giphy.gif -o /outgoing/giphy.gif
 ```
 
 Before
 
-![--resize width 200 --rotate-180 --colors 2 before](incoming/selfprogramming.gif)
+![--rotate-90 before](incoming/giphy.gif)
 
 After
 
-![--resize width 200 --rotate-180 --colors 2 after](outgoing/selfprogramming.gif)
+![--rotate-90 after](outgoing/giphy.gif)
+
+## --use-colormap 'gray'
+
+```bash
+podman run --rm -v $PWD/incoming:/incoming  -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifslce:latest gifsicle --resize-width 200  /incoming/giphy.gif -o /outgoing/giphy.gif
+```
+
+Before
+
+![--use-colormap 'gray' before](incoming/jhin.gif)
+
+After
+
+![--use-colormap 'gray' after](outgoing/jhin.gif)
+
 
 # ChRIS PLugin for pygifsicle
 
