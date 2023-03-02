@@ -18,16 +18,16 @@ After
 ## --resize width 300 --rotate-180 --colors 30 -- Marc Brown changes to gif image 
 
 ```bash
-podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-90 --resize-width 100 /incoming/selfprogramming.gif -o /outgoing/selfprogramming.gif
+podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-90 --resize-width 200 --colors 3 /incoming/selfprogramming.gif -o /outgoing/selfprogramming.gif
 ```
 
 Before
 
-![--resize width 300 --rotate-180 --colors 3 before](incoming/selfprogramming.gif)
+![--resize width 200 --rotate-180 --colors 3 before](incoming/selfprogramming.gif)
 
 After
 
-![--resize width 300 --rotate-180 --colors 3 after](outgoing/selfprogramming.gif)
+![--resize width 200 --rotate-180 --colors 3 after](outgoing/selfprogramming.gif)
 
 # ChRIS PLugin for pygifsicle
 
