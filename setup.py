@@ -19,18 +19,18 @@ def get_version(rel_path: str) -> str:
 
 
 setup(
-    name='chris-plugin-template',
-    version=get_version('app.py'),
-    description='A ChRIS DS plugin template',
+    name='pygifsicle',
+    version=get_version('pygifsicle.py'),
+    description='A ChRIS plugin to modify animated GIF images',
     author='FNNDSC',
-    author_email='dev@babyMRI.org',
-    url='https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules=['app'],
+    author_email='computate@computate.org',
+    url='https://github.com/computate/pl-pygifsicle',
+    py_modules=['pygifsicle'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = app:main'
+            'pygifsicle = pygifsicle:main'
         ]
     },
     classifiers=[
