@@ -23,11 +23,11 @@ podman run --rm -v $PWD/incoming:/incoming  -v $PWD/outgoing:/outgoing --privile
 
 Before
 
-![--resize-width 200 before](incoming/python.gif)
+![--resize-width 200 before](incoming/giphy.gif)
 
 After
 
-![--resize-width 200 after](outgoing/python.gif)
+![--resize-width 200 after](outgoing/giphy.gif)
 
 # ChRIS PLugin for pygifsicle
 
