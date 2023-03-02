@@ -43,6 +43,19 @@ After
 
 ![--use-colormap 'gray' after](outgoing/jhin.gif)
 
+## --rotate-180--
+
+```bash
+podman run --rm -v $PWD/incoming:/incoming  -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifslce:latest gifsicle --rotate-180  /incoming/fabien2022.gif -o /outgoing/fabien2022.gif
+```
+
+Before
+
+![--rotate-180 before](incoming/fabien2022.gif)
+
+After
+
+![--rotate-180 after](outgoing/fabien2022.gif)
 
 ## --resize-width 200 --rotate-180 --colors 10
 
