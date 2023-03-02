@@ -10,6 +10,9 @@ podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileg
 Before
 
 ![--rotate-90 before](incoming/python.gif)
+
+After
+
 ![--rotate-90 after](outgoing/python.gif)
 
 # ChRIS PLugin for pygifsicle
