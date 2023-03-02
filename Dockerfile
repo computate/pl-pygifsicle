@@ -11,6 +11,8 @@ WORKDIR /usr/local/src/pl-pygifsicle
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
+RUN apt-get update
+RUN apt-get -y install gifsicle
 
 COPY . .
 ARG extras_require=none
