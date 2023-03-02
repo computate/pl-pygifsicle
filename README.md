@@ -1,5 +1,19 @@
 
 # Examples: 
+## --rotate-180 --resize-width 222
+
+```bash
+podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it loacalhost/pl-pygifsicle:latest gifsicle --rotate-180 --resize-width 222 /incoming/dog.gif -o /outgoing/dog.gif
+```
+
+Before
+
+![--rotate-90 before](incoming/dog.gif)
+
+After
+
+![--rotate-90 after](outgoing/dog.gif)
+
 
 ## --rotate-90
 
