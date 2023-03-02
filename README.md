@@ -23,11 +23,13 @@ podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileg
 
 Before
 
-![--rotate-90 before](incoming/python.gif)
+![--rotate-90 before](incoming/opensesame.gif)
+
 
 After
 
-![--rotate-90 after](outgoing/python.gif)
+![--flip-horizontal --colors 3 after](outgoing/opensesame.gif)
+
 
 ## --resize-width 200
 
