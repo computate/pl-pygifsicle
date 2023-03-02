@@ -1,5 +1,27 @@
 
 # Examples: 
+
+## --rotate-270
+
+```bash
+$ podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-270 --resize-width 100 /incoming/python.gif -o /outgoing/python.gif
+
+```
+
+Before
+
+![--rotate-90 before](incoming/btreynor.gif)
+
+After
+
+![--rotate-270 after](outgoing/btreynor.gif)
+
+
+## --resize-100
+
+
+podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-270 --resize-width 100 /incoming/python.gif -o /outgoing/python.gif
+
 ## --rotate-180 --resize-width 222
 
 ```bash
