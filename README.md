@@ -15,6 +15,21 @@ After
 
 ![--rotate-90 after](outgoing/python.gif)
 
+
+## --resize width 300 --rotate-180 --colors 30
+
+```bash
+podman run --rm -v $PWD/incoming:/incoming -v $PWD/outgoing:/outgoing --privileged -it localhost/pl-pygifsicle:latest gifsicle --rotate-90 --resize-width 100 /incoming/selfprogramming.gif -o /outgoing/selfprogramming.gif
+```
+
+Before
+
+![--resize width 300 --rotate-180 --colors 30 before](incoming/selfprogramming.gif)
+
+After
+
+![--resize width 300 --rotate-180 --colors 30 after](outgoing/selfprogramming.gif)
+
 # ChRIS PLugin for pygifsicle
 
 [![Version](https://img.shields.io/docker/v/fnndsc/pl-pygifsicle?sort=semver)](https://hub.docker.com/r/fnndsc/pl-pygifsicle)
